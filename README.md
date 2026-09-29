@@ -4,4 +4,5 @@ Habilitar o modo de programador/desenvolvedor
 Carregar extenção expandida
 Selecionar a pasta.
 Após, é só atualizar o advbox. 
-![Uploading preview.png…]()
+<img width="1900" height="861" alt="preview" src="https://github.com/user-attachments/assets/fe2402df-b453-4a25-bd54-f2f0d90eaa4e" />
+
