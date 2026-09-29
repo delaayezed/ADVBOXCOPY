@@ -1,0 +1,20 @@
+.advbox-copy-panel, .advbox-copy-panel * { user-select: text !important; -webkit-user-select: text !important; }
+.advbox-copy-button, .advbox-copy-all { font: inherit; cursor: pointer; border: 0; box-sizing: border-box; }
+.advbox-copy-button { display: inline-grid; place-items: center; width: 30px; height: 30px; margin: -5px 0 -5px 5px; padding: 6px; vertical-align: middle; color: #66778f; background: transparent; border-radius: 7px; transition: color 150ms ease, background 150ms ease, transform 150ms ease; user-select: none !important; -webkit-user-select: none !important; }
+.advbox-copy-button svg, .advbox-copy-all svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.advbox-copy-panel a.advbox-copy-field-link { float: left !important; clear: left !important; display: block !important; box-sizing: border-box !important; width: calc(100% - 35px) !important; min-height: 30px !important; line-height: 30px !important; margin: 0 !important; }
+.advbox-copy-panel a.advbox-copy-field-link + button.advbox-copy-button { float: left !important; clear: none !important; display: inline-grid !important; width: 30px !important; height: 30px !important; min-width: 30px !important; padding: 6px !important; margin: 0 0 0 5px !important; color: #91a5bd; }
+.advbox-copy-button:hover { color: #1769c2; background: #eaf4ff; }
+.advbox-copy-button:focus-visible, .advbox-copy-all:focus-visible { outline: 2px solid #1769c2; outline-offset: 2px; }
+.advbox-copy-success { color: #24884c !important; }
+.advbox-copy-error { color: #bd3d42 !important; }
+.advbox-copy-all { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-width: 142px; height: 34px; margin: 0 0 10px; padding: 0 12px; color: #fff; background: #1769c2; border-radius: 7px; box-shadow: 0 1px 2px rgb(0 0 0 / 16%); transition: background 150ms ease, transform 120ms ease; user-select: none !important; -webkit-user-select: none !important; }
+.advbox-copy-all:hover { background: #1158a5; }
+.advbox-copy-all:active { transform: translateY(1px); }
+.advbox-copy-all.advbox-copy-success { background: #24884c; color: #fff !important; }
+.advbox-copy-all.advbox-copy-error { background: #bd3d42; color: #fff !important; }
+.advbox-copy-toast { position: absolute; right: 16px; bottom: 16px; z-index: 2147483647; max-width: 270px; padding: 10px 12px; color: #fff; background: #25364a; border-radius: 7px; box-shadow: 0 4px 14px rgb(0 0 0 / 20%); font: 500 13px/1.35 system-ui, sans-serif; pointer-events: none; user-select: none !important; animation: advbox-copy-toast-in 160ms ease-out both, advbox-copy-toast-out 180ms ease-in 1.9s both; }
+.advbox-copy-clipboard-fallback { position: fixed; top: -9999px; left: -9999px; opacity: 0; }
+@keyframes advbox-copy-toast-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes advbox-copy-toast-out { to { opacity: 0; transform: translateY(4px); } }
+@media (prefers-reduced-motion: reduce) { .advbox-copy-button, .advbox-copy-all, .advbox-copy-toast { transition: none; animation: none; } }
